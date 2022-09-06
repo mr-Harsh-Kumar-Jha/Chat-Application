@@ -10,7 +10,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 const BotName = 'Love Bot';
 
-const port = 4000 || process.env.PORT;
+const port = 3000 || process.env.PORT;
 //set Static Folder in order to user elements of the folder with their name.
 const PublicDirectory = path.join(__dirname, './public');
 app.use(express.static(PublicDirectory));

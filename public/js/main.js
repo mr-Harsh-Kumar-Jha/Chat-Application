@@ -8,7 +8,7 @@ const {username , room} = Qs.parse(location.search , {
    ignoreQueryPrefix : true
 })
 
-const socket = io();
+const socket =io.connect('https://hsjchat.vercel.app/');
 
 //join chat room
 socket.emit('joinRoom', {username , room});
